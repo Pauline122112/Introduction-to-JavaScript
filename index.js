@@ -137,23 +137,29 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
+let userNum = Math.random();
+	  if (userNum <0.5) {
+		userNum = "Paper";
+	} else if (userNum >= 1) {
+		userNum = "Rock";
+	} else {
+		(userNum = "scissors" ) }
+   
+
 function game(user, computer) {
-	const userChoice = Math.random();
-	  if (userChoice === 0 && userChoice <= 1) {
-		return "Paper";
-	} else if (userChoice >= 0) {
-		return "Rock";
-	} else if (userChoice <= 0.333) 
-    return "scissors";
-	if (user => computer && user === computer) {
-		return "you win!";
-	} else if (user === computer || user <=computer) {
+	if (user === "Rock" && computer === "scissors"){
+			return "you win!";
+	
+	} else if (user === "Paper" && computer === "scissors") {
 		return "you lose!";
-	} else if (user === computer && user> computer) {
+
+	} else if (user === "Paper" && computer === "Paper") {
 		return "it's a tie";
 	}
 	return "user";
 }
+
+console.log(userNum);
 
 // /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 

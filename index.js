@@ -151,6 +151,9 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 const randomChoice = Math.round(Match.random());
+if (randomChoice === 1){
+  console.log("Paper")
+}
 
 function game(user, computer){
     /*add your code here*/

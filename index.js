@@ -137,16 +137,27 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-let userNum = Math.random();
-	  if (userNum <0.5) {
-		userNum = "Paper";
-	} else if (userNum >= 1) {
-		userNum = "Rock";
-	} else {
-		(userNum = "scissors" ) }
+// let userNum = Math.random();
+// 	  if (userNum <0.5) {
+// 		userNum = "Paper";
+// 	} else if (userNum >= 1) {
+// 		userNum = "Rock";
+// 	} else {
+// 		(userNum = "scissors" ) }
    
 
 function game(user, computer) {
+	let userPlayer = Math.random();
+	  if (userPlayer <0) {
+		userPlayer = "Paper";
+	} else if (userPlayer >= 1) {
+		userPlayer = "Rock";
+	} else {
+		(userPlayer = "scissors" ) 
+	}
+	return "userPlayer";
+	}
+
 	if (user === "Rock" && computer === "scissors"){
 			return "you win!";
 	
@@ -159,7 +170,7 @@ function game(user, computer) {
 	return "user";
 }
 
-console.log(userNum);
+
 
 // /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 

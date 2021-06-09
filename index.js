@@ -1,4 +1,4 @@
-// /*🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️ Task 1: Warm-up! 🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️*/
+/*🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️ Task 1: Warm-up! 🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️*/
 
 // /*MAKE SURE TO RETURN ALL OF THE ANSWERS INSIDE OF A FUNCTION ON THESE TASKS, IF YOU DON'T, THE AUTOGRADER WILL NOT WORK*/
 
@@ -11,7 +11,7 @@
 // /*
 // Task 1a - Voting Age
 
-// Do the following:   
+// Do the following:
 //    1. Create a variable called votingAge and assign it a value
 //    2. Console log true if age is 18 or higher
 
@@ -21,7 +21,7 @@
 // /*
 // Task 1b - Values
 
-// Do the following:   
+// Do the following:
 //    1. Declare two variables and assign them values
 //    2. Use a conditional to change the value of the 1st variable based on the value assigned to the 2nd variable
 //    3. Console log the new value of the 1st variable
@@ -32,7 +32,7 @@
 // /*
 // Task 1c - Convert Strings to Numbers
 
-// Do the following:   
+// Do the following:
 //    1. Declare a string type variable with the value of "1999"
 //    2. Convert the string value of "1999" to a integer value of 1999
 //    3. Console log the result
@@ -42,8 +42,8 @@
 
 // /*
 // Task 1d - Multiply
- 
-// Do the following:   
+
+// Do the following:
 //    1. Invoke the multiply function below and pass it two numbers
 //    2. Receive the parameters: a and b
 //    3. Multiply a and b and return the answer
@@ -75,44 +75,44 @@
 //   1. Invoke the hungryDog function below and pass it a weight value in pounds
 //   2. Also, pass to hungryDog an age value in years (note: if the dog is a puppy, the age will be a decimal. For example: three months = 3/12 or .25)
 //   3. Do the proper calculations and return the number of pounds of raw food to feed the dog/puppy in a day
-  
+
 //   REMEMBER: This program should handle correctly adult AND puppy ages and weights
-  
+
 //   Feeding Requirements:
 
-//   Adult Dogs 1 year and older 
+//   Adult Dogs 1 year and older
 //      up to 5 lbs - 5% of their body weight
-//      6 - 10 lbs - 4% of their body weight 
-//      11 - 15 lbs - 3% of their body weight 
-//      > 15lbs - 2% of their body weight 
+//      6 - 10 lbs - 4% of their body weight
+//      11 - 15 lbs - 3% of their body weight
+//      > 15lbs - 2% of their body weight
 
 //   Puppies less than 1 year
 //      2 - 4 months 10% of their body weight
-//      4 - 7 months 5% of their body weight 
+//      4 - 7 months 5% of their body weight
 //      7 - 12 months 4% of their body weight
-    
+
 //   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 // */
 
-// function hungryDog(weight, age) {
-// 	if (age >= 1 && weight <= 5) {
-// 		return weight * 0.05;
-// 	} else if (age >= 1 && weight >= 6 && weight <= 10) {
-// 		return weight * 0.04;
-// 	} else if (age >= 1 && weight >= 11 && weight <= 15) {
-// 		return weight * 0.03;
-// 	} else if (age >= 1 && weight > 15) {
-// 		return weight * 0.02;
-// 	} else if (age < 1 && age >= 0.583) {
-// 		return weight * 0.04;
-// 	} else if (age < 0.583 && age >= 0.333) {
-// 		return weight * 0.05;
-// 	} else if (age < 0.333) {
-// 		return weight * 0.1;
-// 	} else {
-// 		return "please try again";
-// 	}
-// }
+function hungryDog(weight, age) {
+	if (age >= 1 && weight <= 5) {
+		return weight * 0.05;
+	} else if (age >= 1 && weight >= 6 && weight <= 10) {
+		return weight * 0.04;
+	} else if (age >= 1 && weight >= 11 && weight <= 15) {
+		return weight * 0.03;
+	} else if (age >= 1 && weight > 15) {
+		return weight * 0.02;
+	} else if (age < 1 && age >= 0.583) {
+		return weight * 0.04;
+	} else if (age < 0.583 && age >= 0.333) {
+		return weight * 0.05;
+	} else if (age < 0.333) {
+		return weight * 0.1;
+	} else {
+		return "please try again";
+	}
+}
 
 // console.log('task 3', hungryDog(15, 1);
 
@@ -137,23 +137,22 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-const userChoice = Math.floor(Math.random()*2);
-if (userChoice === 1) {
-	
-} else if (userChoice >= 0) {
-	console.log("Rock");
-} else if (userChoice <= 0.333) console.log("scissors");
-
 function game(user, computer) {
-		if (user => computer && user === computer) {
-			return "you win!";
-		} else if (user <= computer) {
-			return "you lose!";
-		} else if (user === computer) {
-			return "it's a tie";
-		}
-		return "user";
-	
+	const userChoice = Math.random();
+	  if (userChoice === 0 && userChoice <= 1) {
+		return "Paper";
+	} else if (userChoice >= 0) {
+		return "Rock";
+	} else if (userChoice <= 0.333) 
+    return "scissors";
+	if (user => computer && user === computer) {
+		return "you win!";
+	} else if (user === computer || user <=computer) {
+		return "you lose!";
+	} else if (user === computer && user> computer) {
+		return "it's a tie";
+	}
+	return "user";
 }
 
 // /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -163,7 +162,7 @@ function game(user, computer) {
 // /*
 // Using the miles function below do the following:
 //   1. Receive a number of kilometers
-//   2. Convert the number of kiolmeters received to miles
+//   2. Convert the number of kilometers received to miles
 //   3. Return the number of miles
 // */
 
@@ -188,7 +187,7 @@ function game(user, computer) {
 // // Let's Sing 99 Bottles of Soda on the Wall!
 // /*
 // Using the annoyingSong function below do the following:
-//   1. Receive a starting number and start the count down from the number received 
+//   1. Receive a starting number and start the count down from the number received
 //   2. At each invocation, it should RETURN this string (note: the tests are expecting the same string as below):
 //       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 // */
@@ -201,11 +200,11 @@ function game(user, computer) {
 
 // //Grade Calculator
 // /*
-// Using the grade function below do the following: 
-//   1. Receive a score out of 100 
+// Using the grade function below do the following:
+//   1. Receive a score out of 100
 //   2. Return the corresponding letter grade following this grade scale:
 
-//    90-100 should return 'you got an A' 
+//    90-100 should return 'you got an A'
 //    80-89 should return 'you got a B'
 //    70-79 should return 'you got a C'
 //    60-69 should return 'you got a D'
@@ -224,7 +223,7 @@ function game(user, computer) {
 //   1. Receive a string as a parameter
 //   2. Count and return the number of vowels within that string.  It should handle both capitalized and uncapitalized vowels.
 
-//   HINT - you may need to study tomorrow's content on arrays 
+//   HINT - you may need to study tomorrow's content on arrays
 //   HINT - try looking up the .includes() method
 // */
 

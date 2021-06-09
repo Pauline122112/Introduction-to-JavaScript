@@ -161,12 +161,14 @@ let randomChoice = Match.random();
 
 
 function game(user, computer){
-  for (let i = 0; i < 2; i++){
+  for (let user = 0; user < 2; user++){
+
+
 
   }
 return user;
 }
-console.log(game(user))
+
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/

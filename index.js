@@ -153,7 +153,12 @@ Use the game function below to do the following:
 const randomChoice = Math.round(Match.random());
 if (randomChoice === 1){
   console.log("Paper")
+} else if (randomChoice >= 0){
+  console.log("Rock")
+}else{
+  console.log("scissors")
 }
+
 
 function game(user, computer){
     /*add your code here*/

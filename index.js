@@ -151,19 +151,22 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-
-
-function game(user, computer){
-    const randomChoice = Math.round(Match.random());
-if (randomChoice === 1){
+let randomChoice = Match.random();
+  if (randomChoice === 1){
   console.log("Paper")
 } else if (randomChoice >= 0){
   console.log("Rock")
-}else{
+} else if (randomChoice <= 0.333)
   console.log("scissors")
+
+
+function game(user, computer){
+  for (let i = 0; i < 2; i++){
+
+  }
+return user;
 }
-}
-  
+console.log(game(user))
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/

@@ -162,11 +162,19 @@ let randomChoice = Match.random();
 
 function game(user, computer){
   for (let user = 0; user < 2; user++){
+    if (user => computer){
+      return "you win!";
+    }
+    else if (user <= computer){
+      return "you lose!";
+    }
 
-
-
+    else if ( user === computer){
+      return "it's a tie";
+    }
+return "user";
   }
-return user;
+
 }
 
   
